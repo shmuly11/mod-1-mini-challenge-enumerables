@@ -7,17 +7,20 @@ spicy_foods = [
 ]
 
 def print_spicy_foods(spicy_foods)
-  spicy_foods.each do |i|
-    i.each do |k, v|
-      heat = k[:heat_level].times{"🌶"}
-      binding.pry
+  
+  spicy_foods.map do |i|
+binding.pry
+      heat = :heat_level.times{"🌶"}
+      
       puts "#{:name} (#{:cuisine}) | Heat Level: #{heat}"
-    end
+  
 
   end
 
 end
-binding.pry
+#binding.pry
+
+
 def get_names(spicy_foods)
 
 end
@@ -41,5 +44,5 @@ end
 
 # Use this to test your methods
 # run "ruby run.rb" and try calling the methods from the console
-binding.pry
+#binding.pry
 "pls"
