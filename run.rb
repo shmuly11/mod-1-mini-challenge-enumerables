@@ -7,9 +7,17 @@ spicy_foods = [
 ]
 
 def print_spicy_foods(spicy_foods)
+  spicy_foods.each do |i|
+    i.each do |k, v|
+      heat = k[:heat_level].times{"🌶"}
+      binding.pry
+      puts "#{:name} (#{:cuisine}) | Heat Level: #{heat}"
+    end
+
+  end
 
 end
-
+binding.pry
 def get_names(spicy_foods)
 
 end
